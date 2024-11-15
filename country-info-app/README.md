@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Country Info App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+A web application built with React and Next.js that displays information about countries, including population data, flags, and borders.
 
-```bash
+## Requirements
+
+- Node.js (v14 or higher)
+- npm (v7 or higher)
+
+## Installation
+
+Follow these steps to get your environment set up:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/samuelgsousa/Country-info-app.git
+
+   ```
+
+2. Navigate into the project directory:
+   cd country-info-app
+
+3. Install the dependencies:
+   npm install
+
+## Configuration
+
+Before running the application, configure the environment variables:
+
+Create a .env.local file in the root directory of the project.
+
+Add the following line to .env.local:
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+
+##Running the Application
+To start the development server, run:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the application on http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Directory Structure
+/pages: Contains the main pages for the application, including the homepage and country details.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/components: Reusable components such as charts and country info displays.
 
-## Learn More
+/public: Static files such as images.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Notes:
+Make sure the API endpoints used in the app are functional and accessible.
+The app is responsive and optimized for desktop and mobile devices.
+License
+This project is licensed under the MIT License.
