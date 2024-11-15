@@ -19,21 +19,20 @@
   cursor: pointer;
 }
 
-.list a{
+.list a {
   font-size: 1.5rem;
-  text-decoration: none; 
-  color: rgb(134, 134, 252); 
+  text-decoration: none;
+  color: rgb(134, 134, 252);
   display: flex;
   text-align: center;
 }
 
-.list li:hover{
+.list li:hover {
   background-color: rgb(134, 134, 252);
   transition: 0.2s;
 }
 
 .list li:hover a {
-  color: white; 
+  color: white;
   transition: 0.2s;
 }
-

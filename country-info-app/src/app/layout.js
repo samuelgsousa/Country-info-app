@@ -30,21 +30,34 @@ export default function RootLayout({ children }) {
         <header>
           <h1>Country List</h1>
         </header>
-        
+
         {children}
-      
-          <footer>
-      <span>
-          Made by <strong>Samuel Sousa</strong>
-      </span>
-      
-      <div>
-          <a href="https://github.com/samuelgsousa" target="_blank">GitHub <img src="/icons/external-link.svg" alt="" class="external" />  <img src="/icons/github-mark.svg" alt="GitHub" id="Github"/></a> 
-          <a href="https://www.linkedin.com/in/samuel-gomes-teixeira-de-sousa-5537b71b9" target="_blank">Linkedin <img src="/icons/external-link.svg" alt="Linkedin" class="external"/> <img src="/icons/linkedin.svg" alt="" /> </a> 
-      </div>
-      
-       </footer>
-      
+
+        <footer>
+          <span>
+            Made by <strong>Samuel Sousa</strong>
+          </span>
+
+          <div>
+            <a href="https://github.com/samuelgsousa" target="_blank">
+              GitHub{' '}
+              <img src="/icons/external-link.svg" alt="" class="external" />{' '}
+              <img src="/icons/github-mark.svg" alt="GitHub" id="Github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/samuel-gomes-teixeira-de-sousa-5537b71b9"
+              target="_blank"
+            >
+              Linkedin{' '}
+              <img
+                src="/icons/external-link.svg"
+                alt="Linkedin"
+                class="external"
+              />{' '}
+              <img src="/icons/linkedin.svg" alt="" />{' '}
+            </a>
+          </div>
+        </footer>
       </body>
     </html>
   );

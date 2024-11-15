@@ -15,15 +15,19 @@ const Page = () => {
 
   return (
     <div>
-
-      <p className='wellcomeText'>Select one Country to see details about it!</p>
+      <p className="wellcomeText">
+        Select one Country to see details about it!
+      </p>
 
       <ul className={styles.list}>
         {Array.isArray(lista) &&
           lista.map((item) => (
-            <li key={item.countryCode}
-            onClick={() => window.location.href = `/country/${item.countryCode}`}
-            className={styles.listItem}
+            <li
+              key={item.countryCode}
+              onClick={() =>
+                (window.location.href = `/country/${item.countryCode}`)
+              }
+              className={styles.listItem}
             >
               <Link href={`/country/${item.countryCode}`}>{item.name}</Link>
             </li>

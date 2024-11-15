@@ -1,36 +1,36 @@
-.content{
-    text-align: center;
+.content {
+  text-align: center;
 }
 
-.flag{
-    width: 15rem;
+.flag {
+  width: 15rem;
 }
 
-.chartContent{
-    display: flex;
-    justify-content: center;
+.chartContent {
+  display: flex;
+  justify-content: center;
 }
 
-.countryBorders{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 200px;
-    margin: auto;
-    gap: 0px;
+.countryBorders {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 200px;
+  margin: auto;
+  gap: 0px;
 }
 
-.countryBorders ul{
-    padding-left: 1px;
-    list-style-type: none;
+.countryBorders ul {
+  padding-left: 1px;
+  list-style-type: none;
 }
 
-.countryBorders li{
-    text-align: left;
+.countryBorders li {
+  text-align: left;
 }
 
-.countryBasicInfo{
-    text-align: left;
-    width: 200px;
-    margin: auto;
+.countryBasicInfo {
+  text-align: left;
+  width: 200px;
+  margin: auto;
 }

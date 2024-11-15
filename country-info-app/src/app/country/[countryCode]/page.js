@@ -14,7 +14,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import styles from './page.css'
+import styles from './page.css';
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -85,7 +85,7 @@ const CountryPage = () => {
   if (!countryCode) return <div>Carregando...</div>;
 
   return (
-    <div className='content'>
+    <div className="content">
       {countryInfo && (
         <div>
           <h2>
@@ -102,35 +102,33 @@ const CountryPage = () => {
                   borderWidth: '2px',
                   borderStyle: 'solid',
                 }}
-                className='flag'
+                className="flag"
               />
             ) : (
               <p>Flag not available</p>
             )}
           </div>
 
-<div className="countryBasicInfo">
-  
-  <p>
-    <strong>Region:</strong> {countryInfo.region}
-  </p>
-  <div className='countryBorders'>
-  <p>
-    <strong>Borders:</strong>
-  </p>
-  <ul>
-      {countryInfo.borders &&
-        countryInfo.borders.map((border, index) => (
-          <li key={index}>{border.commonName}</li>
-        ))}
-  </ul>
-  </div>
-</div>
-
+          <div className="countryBasicInfo">
+            <p>
+              <strong>Region:</strong> {countryInfo.region}
+            </p>
+            <div className="countryBorders">
+              <p>
+                <strong>Borders:</strong>
+              </p>
+              <ul>
+                {countryInfo.borders &&
+                  countryInfo.borders.map((border, index) => (
+                    <li key={index}>{border.commonName}</li>
+                  ))}
+              </ul>
+            </div>
+          </div>
         </div>
       )}
 
-      <div style={{ width: '100vw', height: '400px' }} className='chartContent'>
+      <div style={{ width: '100vw', height: '400px' }} className="chartContent">
         {populationData && <PopulationChart populationData={populationData} />}
       </div>
     </div>
