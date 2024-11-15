@@ -52,16 +52,13 @@ const CountryPage = () => {
   useEffect(() => {
     if (!countryCode) return;
 
-    // Buscar dados do país
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/country/${countryCode}`)
       .then((response) => response.json())
       .then((data) => {
         setCountryInfo(data);
 
-        // Agora que temos o nome do país, buscamos a população e a bandeira
         const countryName = data.commonName;
 
-        // Buscar dados de população pelo nome do país
         fetch(`${process.env.NEXT_PUBLIC_API_URL}/population`)
           .then((response) => response.json())
           .then((data) => {
@@ -73,7 +70,6 @@ const CountryPage = () => {
             );
           });
 
-        // Buscar dados de bandeira pelo nome do país
         fetch(`${process.env.NEXT_PUBLIC_API_URL}/flags`)
           .then((response) => response.json())
           .then((data) => {
