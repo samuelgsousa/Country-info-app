@@ -35,7 +35,8 @@ Create a .env.local file in the root directory of the project.
 Add the following line to .env.local:
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
-##Running the Application
+## Running the Application
+
 To start the development server, run:
 npm run dev
 

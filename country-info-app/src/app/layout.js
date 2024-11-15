@@ -39,20 +39,25 @@ export default function RootLayout({ children }) {
           </span>
 
           <div>
-            <a href="https://github.com/samuelgsousa" target="_blank">
+            <a
+              href="https://github.com/samuelgsousa"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub{' '}
-              <img src="/icons/external-link.svg" alt="" class="external" />{' '}
+              <img src="/icons/external-link.svg" alt="" className="external" />{' '}
               <img src="/icons/github-mark.svg" alt="GitHub" id="Github" />
             </a>
             <a
               href="https://www.linkedin.com/in/samuel-gomes-teixeira-de-sousa-5537b71b9"
               target="_blank"
+              rel="noreferrer"
             >
               Linkedin{' '}
               <img
                 src="/icons/external-link.svg"
                 alt="Linkedin"
-                class="external"
+                className="external"
               />{' '}
               <img src="/icons/linkedin.svg" alt="" />{' '}
             </a>

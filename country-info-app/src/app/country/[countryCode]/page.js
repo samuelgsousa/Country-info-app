@@ -15,6 +15,7 @@ import {
   Legend,
 } from 'chart.js';
 import styles from './page.css';
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
