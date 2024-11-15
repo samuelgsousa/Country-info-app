@@ -57,7 +57,7 @@ Before running the application, configure the environment variables:
    Navigate to the backend folder and run:
 
    ```bash
-   npm start
+   node index.js
    ```
 
 2. Start the frontend development server:
