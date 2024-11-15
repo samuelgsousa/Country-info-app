@@ -22,7 +22,7 @@ Follow these steps to set up your environment:
 2. Navigate into the project directory:
 
    ```bash
-   cd country-info-app
+   cd country-info-app/country-info-app
    ```
 
 3. Install the dependencies:
