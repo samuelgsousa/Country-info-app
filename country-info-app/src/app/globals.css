@@ -63,3 +63,93 @@ header h1{
   text-align: center;
   font-size: 2rem;
 }
+
+
+/* FOOTER */
+
+footer{
+  color: white;
+  margin-top: 40px;
+  background-color: rgb(59, 59, 241);
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+footer div{
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+
+
+footer div a{
+  display: flex;
+  align-items: end;
+  gap: 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer img{
+  width: 32px;
+  height: 32px;
+}
+
+.external{
+  width: 14px;
+  height: 14px;
+  align-self: self-start;
+  margin-left: -15px;
+  filter: brightness(0) invert(1)
+}
+
+footer span{
+  font-size: 1.2rem;
+}
+
+#Github{
+  filter: brightness(0) invert(1)
+}
+
+@media(max-width: 730px){
+  footer{
+    flex-direction: column;
+    height: 10vh;
+    gap: 15px;
+  }
+  
+}
+
+@media(max-width: 380px){
+  footer{
+    height: 20vh;
+  }
+
+  footer span{
+    font-size: 0.8rem;
+  }
+
+  footer div a{
+    font-size: 0.8rem;
+
+  }
+
+  footer img{
+    width: 24px;
+    height: 24px;
+  }
+
+  footer div{
+    gap: 10px;
+  }
+  
+  
+}
+
