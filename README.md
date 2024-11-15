@@ -72,8 +72,6 @@ This will start the application on http://localhost:3000 and the backend on http
 
 ## Directory Structure
 
-- `/pages`: Contains the main pages for the application, including the homepage and country details.
-- `/components`: Reusable components such as charts and country info displays.
 - `/public`: Static files such as images.
 
 ## Notes
