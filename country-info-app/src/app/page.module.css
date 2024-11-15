@@ -1,4 +1,39 @@
 .list {
-  columns: 3;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
+
+.list li {
+  margin: auto;
+  display: flex;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(83, 83, 252);
+  width: 200px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.list a{
+  font-size: 1.5rem;
+  text-decoration: none; 
+  color: rgb(134, 134, 252); 
+  display: flex;
+  text-align: center;
+}
+
+.list li:hover{
+  background-color: rgb(134, 134, 252);
+  transition: 0.2s;
+}
+
+.list li:hover a {
+  color: white; 
+  transition: 0.2s;
+}
+

@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './page.module.css';
+import React from 'react';
 
 const Page = () => {
   const [lista, setLista] = useState([]);
@@ -14,15 +15,19 @@ const Page = () => {
 
   return (
     <div>
-      <h1>Country List</h1>
+
+      <p className='wellcomeText'>Select one Country to see details about it!</p>
+
       <ul className={styles.list}>
-        {Array.isArray(lista) && lista.map((item) => (
-          <li key={item.countryCode}>
-            <Link href={`/country/${item.countryCode}`}>
-              {item.name}
-            </Link>
-          </li>
-        ))}
+        {Array.isArray(lista) &&
+          lista.map((item) => (
+            <li key={item.countryCode}
+            onClick={() => window.location.href = `/country/${item.countryCode}`}
+            className={styles.listItem}
+            >
+              <Link href={`/country/${item.countryCode}`}>{item.name}</Link>
+            </li>
+          ))}
       </ul>
     </div>
   );
